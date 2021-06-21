@@ -2,7 +2,7 @@
 android
 1. DELETE A TASK : 
 On long click on a task, one can delete it.
-2. EDIT A TASK : T
+2. EDIT A TASK : 
  Task can be edited by single click on it.
 3. "+" Floating action button can be used to add a new task
 4. Search icon in the action bar can be used to search a task
