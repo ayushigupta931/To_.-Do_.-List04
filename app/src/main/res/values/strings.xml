@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">To Do List</string>
+    <string name="Tasks">Tasks</string>
+    <string name="add">add</string>
+    <string name="sampleTask">Sample Task</string>
+    <string name="addYourTask">Enter Task here </string>
+    <string name="Save">SAVE</string>
+    <string name="Delete">Delete</string>
+    <string name="selectAll">Select All</string>
+    <string name="search">Search</string>
+    <string name="date">Day, Date Month Year</string>
+    <string name="WhatIsToBeDone">What is to be done?</string>
+    <string name="DueDate">Due Date</string>
+    <string name="NoTask">No Task</string>
+    <string name="time">Hours:Minutes</string>
+    <string name="img">image</string>
+</resources>

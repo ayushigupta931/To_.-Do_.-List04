@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddNewTask">
+
+    <TextView
+        android:id="@+id/whatIsToBeDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/WhatIsToBeDone"
+        android:textColor="#B2EBF2"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/newTaskField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whatIsToBeDone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#B2EBF2"
+        android:hint="@string/addYourTask"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="#90A4AE"
+        android:textSize="20sp"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/DueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskField"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/DueDate"
+        android:textColor="#B2EBF2"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/DateField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DueDate"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#B2EBF2"
+        android:hint="@string/date"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#90A4AE"
+        android:textSize="20sp"
+        tools:ignore="Autofill,TextFields,UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/calender"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/DueDate"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/img"
+        android:src="@drawable/ic_baseline_calendar_today"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/TimeField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DateField"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#B2EBF2"
+        android:hint="@string/time"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#90A4AE"
+        android:textSize="20sp"
+        tools:ignore="Autofill,UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/DateField"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/img"
+        android:src="@drawable/ic_baseline_access_time_24"
+        tools:ignore="RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/Save"
+        android:src="@drawable/ic_baseline_check"
+        app:maxImageSize="40dp"
+        app:tint="@color/listItem"
+        tools:ignore="UnusedAttribute" />
+
+
+</RelativeLayout>
